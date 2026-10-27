@@ -1,0 +1,8 @@
+entity player {
+    health = 100;
+    x = 0;
+    y = 0;
+}
+
+print player.mana;
+

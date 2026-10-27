@@ -1,0 +1,22 @@
+# Colisao entre jogador e inimigo.
+entity player {
+    health = 100;
+    x = 0;
+    y = 0;
+}
+
+entity enemy {
+    health = 30;
+    x = 0;
+    y = 0;
+}
+
+when player touches enemy {
+    damage player by 10;
+    damage enemy by 5;
+    print "colisao";
+    print player.health;
+}
+
+print "arena pronta";
+

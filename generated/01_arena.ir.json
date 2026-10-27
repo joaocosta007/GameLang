@@ -1,0 +1,154 @@
+{
+  "entities": {
+    "enemy": {
+      "health": 30,
+      "x": 0,
+      "y": 0
+    },
+    "player": {
+      "health": 100,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "events": [
+    {
+      "body": [
+        {
+          "body": [],
+          "op": "damage",
+          "operands": {
+            "amount": {
+              "$expr": {
+                "op": "const",
+                "span": {
+                  "column": 22,
+                  "end_column": 24,
+                  "end_line": 15,
+                  "line": 15
+                },
+                "value": 10
+              }
+            },
+            "entity": "player"
+          },
+          "span": {
+            "column": 5,
+            "end_column": 25,
+            "end_line": 15,
+            "line": 15
+          }
+        },
+        {
+          "body": [],
+          "op": "damage",
+          "operands": {
+            "amount": {
+              "$expr": {
+                "op": "const",
+                "span": {
+                  "column": 21,
+                  "end_column": 22,
+                  "end_line": 16,
+                  "line": 16
+                },
+                "value": 5
+              }
+            },
+            "entity": "enemy"
+          },
+          "span": {
+            "column": 5,
+            "end_column": 23,
+            "end_line": 16,
+            "line": 16
+          }
+        },
+        {
+          "body": [],
+          "op": "print",
+          "operands": {
+            "value": {
+              "$expr": {
+                "op": "const",
+                "span": {
+                  "column": 11,
+                  "end_column": 20,
+                  "end_line": 17,
+                  "line": 17
+                },
+                "value": "colisao"
+              }
+            }
+          },
+          "span": {
+            "column": 5,
+            "end_column": 21,
+            "end_line": 17,
+            "line": 17
+          }
+        },
+        {
+          "body": [],
+          "op": "print",
+          "operands": {
+            "value": {
+              "$expr": {
+                "op": "property",
+                "span": {
+                  "column": 11,
+                  "end_column": 24,
+                  "end_line": 18,
+                  "line": 18
+                },
+                "value": "player.health"
+              }
+            }
+          },
+          "span": {
+            "column": 5,
+            "end_column": 25,
+            "end_line": 18,
+            "line": 18
+          }
+        }
+      ],
+      "left": "player",
+      "right": "enemy",
+      "span": {
+        "column": 1,
+        "end_column": 2,
+        "end_line": 19,
+        "line": 14
+      }
+    }
+  ],
+  "format": "GameLang-IR",
+  "instructions": [
+    {
+      "body": [],
+      "op": "print",
+      "operands": {
+        "value": {
+          "$expr": {
+            "op": "const",
+            "span": {
+              "column": 7,
+              "end_column": 21,
+              "end_line": 21,
+              "line": 21
+            },
+            "value": "arena pronta"
+          }
+        }
+      },
+      "span": {
+        "column": 1,
+        "end_column": 22,
+        "end_line": 21,
+        "line": 21
+      }
+    }
+  ],
+  "version": "1.0"
+}

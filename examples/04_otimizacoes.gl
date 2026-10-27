@@ -1,0 +1,15 @@
+entity bot {
+    health = 40;
+    x = 0;
+    y = 0;
+}
+
+damage bot by 2 * (3 + 1);
+heal bot by 0;
+move bot by (0, 0);
+repeat 1 {
+    move bot by (5 + 0, 2 * 1);
+}
+print bot.health;
+print bot.x;
+

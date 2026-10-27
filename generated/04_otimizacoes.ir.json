@@ -1,0 +1,143 @@
+{
+  "entities": {
+    "bot": {
+      "health": 40,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "events": [],
+  "format": "GameLang-IR",
+  "instructions": [
+    {
+      "body": [],
+      "op": "damage",
+      "operands": {
+        "amount": {
+          "$expr": {
+            "op": "const",
+            "span": {
+              "column": 15,
+              "end_column": 25,
+              "end_line": 7,
+              "line": 7
+            },
+            "value": 8
+          }
+        },
+        "entity": "bot"
+      },
+      "span": {
+        "column": 1,
+        "end_column": 27,
+        "end_line": 7,
+        "line": 7
+      }
+    },
+    {
+      "body": [],
+      "op": "move",
+      "operands": {
+        "delta": {
+          "$expr": {
+            "op": "const",
+            "span": {
+              "column": 13,
+              "end_column": 19,
+              "end_line": 9,
+              "line": 9
+            },
+            "value": [
+              0,
+              0
+            ]
+          }
+        },
+        "entity": "bot"
+      },
+      "span": {
+        "column": 1,
+        "end_column": 20,
+        "end_line": 9,
+        "line": 9
+      }
+    },
+    {
+      "body": [],
+      "op": "move",
+      "operands": {
+        "delta": {
+          "$expr": {
+            "op": "const",
+            "span": {
+              "column": 17,
+              "end_column": 31,
+              "end_line": 11,
+              "line": 11
+            },
+            "value": [
+              5,
+              2
+            ]
+          }
+        },
+        "entity": "bot"
+      },
+      "span": {
+        "column": 5,
+        "end_column": 32,
+        "end_line": 11,
+        "line": 11
+      }
+    },
+    {
+      "body": [],
+      "op": "print",
+      "operands": {
+        "value": {
+          "$expr": {
+            "op": "property",
+            "span": {
+              "column": 7,
+              "end_column": 17,
+              "end_line": 13,
+              "line": 13
+            },
+            "value": "bot.health"
+          }
+        }
+      },
+      "span": {
+        "column": 1,
+        "end_column": 18,
+        "end_line": 13,
+        "line": 13
+      }
+    },
+    {
+      "body": [],
+      "op": "print",
+      "operands": {
+        "value": {
+          "$expr": {
+            "op": "property",
+            "span": {
+              "column": 7,
+              "end_column": 12,
+              "end_line": 14,
+              "line": 14
+            },
+            "value": "bot.x"
+          }
+        }
+      },
+      "span": {
+        "column": 1,
+        "end_column": 13,
+        "end_line": 14,
+        "line": 14
+      }
+    }
+  ],
+  "version": "1.0"
+}

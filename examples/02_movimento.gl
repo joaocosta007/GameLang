@@ -1,0 +1,14 @@
+// Movimento repetido e expressao aritmetica.
+entity ship {
+    health = 80;
+    x = 0;
+    y = 2;
+}
+
+repeat 3 {
+    move ship by (2 + 0, 1 * 1);
+}
+
+print ship.x;
+print ship.y;
+

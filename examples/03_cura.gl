@@ -1,0 +1,12 @@
+entity hero {
+    health = 50 + 10;
+    x = 4;
+    y = 7;
+}
+
+damage hero by 15;
+heal hero by 5;
+move hero by (-1, 2);
+print "vida final";
+print hero.health;
+
