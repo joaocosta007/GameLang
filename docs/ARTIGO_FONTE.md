@@ -1,4 +1,14 @@
-# GameLang Uma linguagem específica de domínio com interpretação e geração de Python
+# GameLang: Uma linguagem específica de domínio com interpretação e geração de Python
+
+**Autores:**
+- Victor Will dos Santos — 194427
+- João Pedro Pirani — 194411
+- Ryan Markus Maciel Araujo — 202006
+- Lucas dos Santos Garreto — 200131
+- Enzo Giuliano Cardoso Santana — 200265
+
+**Projeto e Implementação de Compiladores**  
+**UNASP-SP — 2026/2**
 
 ## Resumo
 
@@ -33,6 +43,14 @@ A suíte automatizada cobre lexer, comentários, textos, precedência, erros sin
 Os programas válidos incluem colisão, movimento repetido, dano seguido de cura e um caso direcionado às otimizações. Os exemplos inválidos provocam caractere desconhecido, ponto e vírgula ausente, entidade inexistente, propriedade inexistente e tipo incompatível. Todos os diagnósticos originados no frontend carregam linha e coluna.
 
 ## 5 Discussão
+
+| Verificação | Resultado | Evidência |
+| --- | --- | --- |
+| Suíte automatizada | 27 aprovados | Execução com unittest |
+| Programas válidos | 4 | Exemplos na pasta examples |
+| Programas inválidos | 5 | Erros léxicos, sintáticos e semânticos |
+| Rotas equivalentes | Aprovado | Snapshot do interpretador e do Python |
+| Classes de otimização | 3 | Constantes, identidades e código sem efeito |
 
 A IR estruturada foi suficiente porque o núcleo não possui condicionais nem saltos arbitrários. Um CFG ou SSA adicionaria complexidade sem melhorar as transformações atuais. O desenho mantém espaço para uma extensão futura com condicionais, variáveis locais e um CFG explícito.
 
